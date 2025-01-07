@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Kontakt</title>
+</head>
+
+<body>
+    <header>
+        <h1>Kontakt</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="produktSida.html">Produktsida</a></li>
+                <li><a href="omOss.html">Om oss</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>Kontakta oss via formulär</h3>
+            <form action="/submit" method="post">
+                <p>
+                    <label for="name">Namn: </label><br><input type="text" id="name" name="name" required>
+                    <br>
+                    <br>
+                    <label for="E-post">E-post: </label><br><input type="text" id="E-post" name="E-post" required>
+                    <br>
+                    <br>
+                    <label for="tel">Telefon: </label><br><input type="text" id="tel" name="tel" required>
+                    <br>
+                    <br>
+                    <label for="birthday">Födelsedag:</label><br><input type="date" id="birthday" name="birthday">
+
+                    <br>
+                    <br>
+                <p>Välj typ av kund:</p>
+                <input type="radio" id="soonCustomer" name="customer" value="soonCustomer"> <label
+                    for="soonCustomer">Blivande Kund</label>
+                <input type="radio" id="customerNow" name="customer" value="customerNow"> <label
+                    for="customerNow">Nuvarande kund</label>
+                <br>
+                <br>
+                <label for="category">Välj kategori:</label>
+                <br>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>Välj ett alternativ</option>
+                    <option value="support">Support</option>
+                    <option value="sales">Försäljning</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+                <br>
+                <br>
+                <label for="name">Ämne:</label>
+                <br>
+                <input type="text" id="subject" name="subject" required>
+                <br>
+                <br>
+                <label for="message">Meddelande:</label>
+                <br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                <br>
+                <br>
+                <p>Kryssa i rutan för att godkänna integritetspolicy</p>
+                <input type="checkbox" id="policy" name="policy" value="policy"> <label for="policy">Jag
+                    godkänner</label>
+                <br>
+                <br>
+                <input type="submit" value="Skicka">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Webshop AB</p>
+    </footer>
+</body>
+
+</html>

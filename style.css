@@ -1,0 +1,69 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+article {
+    background-color: rgb(141, 141, 141);
+    color: #f0f0f0;
+    text-align: center;
+}
+
+h2, h3, form {
+    text-align: center;
+}
+
+.image {
+    width: 50%; /* Anpassa till 50% av förälderelementets bredd */
+    max-width: 400px; /* Maximal bredd */
+    height: auto; /* Bevarar proportionerna */
+    display: block; /* Centrerar bilden om den är inuti ett block */
+    margin: 0 auto; /* Lägger till centrerad layout */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+}
+
+a {
+    display: inline-block; /* Gör länken till ett block för att kunna påverkas av transform */
+    text-decoration: none; /* Tar bort eventuell understrykning */
+}
+
+a:hover {
+    background-color: #ffa600; /* Ändrar bakgrundsfärg vid hover */
+    color: white; /* Ändrar textfärg till vit */
+    transform: scale(1.3); /* Gör knappen något större */
+    transition: all 1s; /* Lägger till en mjuk övergång för alla effekter */
+}
+
+
+
